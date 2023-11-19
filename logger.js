@@ -18,7 +18,9 @@ const log = ( msg = '', jsonSpacing = -1, append = 0 ) => {
 	const target = getLogger()
 	if(jsonSpacing > -1){
 		msg = JSON.stringify(msg, null, jsonSpacing)
-	} else {
+	} else if( typeof msg === 'object' ) { // force stringification of objects
+		msg = JSON.stringify(msg)
+	} else{
 		msg = msg.trim()
 	}
 
