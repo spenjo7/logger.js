@@ -5,7 +5,7 @@ Its not as robust as the Console.log() but it has the advantage of showing its o
 
 ````
 // msg = A text String or an Object
-// indent = The indentation for stringifying an Object:
+// indent = The indentation ( or 'space' ) for stringifying an Object:
   /// null or -1, if msg is a text String
   /// 0, to have the JSON all on one flat line
   /// 1, or higher to have the JSON 'beautified' across multiple lines
